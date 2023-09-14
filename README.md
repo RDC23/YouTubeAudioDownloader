@@ -40,6 +40,9 @@ python audioscraper.py
 
 5. You can also open the YouTube website in a new window by clicking the "Search YouTube" button.
 
+## GUI Window
+![Screenshot](gui_image.png)
+
 ## Acknowledgments
 
 - [PySimpleGUI](https://pysimplegui.readthedocs.io/en/latest/) for providing a simple GUI framework.
