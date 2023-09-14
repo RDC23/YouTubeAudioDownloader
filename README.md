@@ -9,7 +9,7 @@
 - User-friendly graphical interface built with PySimpleGUI.
 - Dark theme for comfortable usage, especially in low-light conditions.
 - Direct access to the YouTube website from the app.
-- **Highest quality** audio stream downloaded.
+- Highest quality audio stream downloaded.
 
 ## Installation
 
