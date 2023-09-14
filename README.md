@@ -1,6 +1,6 @@
-# YouTube Audio Scraper
+# YouTube Audio Downloader
 
-**YouTube Audio Scraper** is a Python application that allows you to easily download audio from YouTube videos. With a simple and user-friendly interface, you can quickly extract audio tracks from your favorite videos and save them to your local machine.
+**YouTube Audio Downloader** is a Python application that allows you to easily download audio from YouTube videos. With a simple and user-friendly interface, you can quickly extract audio tracks from your favorite videos and save them to your local machine.
 
 ## Features
 
