@@ -42,7 +42,7 @@ python audioscraper.py
 5. You can also open the YouTube website in a new window by clicking the "Search" button.
 
 ## GUI Window
-![Screenshot](gui_image.png)
+![Screenshot](gui_img.png)
 
 ## Acknowledgments
 
