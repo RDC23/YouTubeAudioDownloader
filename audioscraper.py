@@ -16,12 +16,12 @@ def generateLayout():
     }
 
     layout = [
-        [sg.Text("Enter URL:", font=('Arial', 14)), sg.Input(key="-URL-", **input_style), sg.Button("Search YouTube")],
-        [sg.Text("Save destination:", font=('Arial', 14)), sg.Input(key="-DEST-", **input_style), sg.FolderBrowse()],
+        [sg.Text("Enter URL:", font=('Arial', 14),  s = 16, justification="right"), sg.Input(key="-URL-", **input_style), sg.Button("Search", size=16)],
+        [sg.Text("Save destination:", font=('Arial', 14),  s = 16, justification="right"), sg.Input(key="-DEST-", **input_style), sg.FolderBrowse(size = 16)],
         [sg.HorizontalSeparator()],
-        [sg.Text('', size=(15, 1)), sg.Button("Download Audio", pad=(10, 5), size=(15, 1)), sg.Exit("Exit", button_color = ("white", "tomato"), pad=(10, 5), size=(8, 1))],
+        [sg.Text('', size=(18, 1)), sg.Button("Download Audio", pad=(10, 10), size=(15, 1)), sg.Exit("Exit", button_color = ("white", "tomato"), pad=(10, 10), size=(15, 1))],
         [sg.HorizontalSeparator()],
-        [sg.Text("", key="-STATUS-", text_color='light green')]
+        [sg.Text('', size=(18, 1)), sg.Text("", key="-STATUS-", text_color='light green', s=30, justification="right")]
     ]
 
     return layout
@@ -54,12 +54,11 @@ def downloadAudio(window, url, download_directory):
         clean_filename = cleanFilename(video.title)
         file_path = os.path.join(download_directory, f"{clean_filename}.mp3")
         stream.download(output_path=download_directory, filename=f"{clean_filename}.mp3")
-        window["-STATUS-"].update(f"Successfully downloaded audio: {clean_filename}.mp3")
+        window["-STATUS-"].update(f"Successfully downloaded audio!",text_color = "light green")
         window["-URL-"].update(value="")
 
     except Exception as e:
-        clean_filename = ""
-        window["-STATUS-"].update(f"Error downloading {clean_filename}.mp3", text_color='tomato')
+        window["-STATUS-"].update(f"Error downloading requested audio!", text_color='tomato')
 
 def main():
     windowTheme()
