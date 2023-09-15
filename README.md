@@ -39,7 +39,7 @@ python audioscraper.py
 
 4. Click the "Download Audio" button to start the download process.
 
-5. You can also open the YouTube website in a new window by clicking the "Search YouTube" button.
+5. You can also open the YouTube website in a new window by clicking the "Search" button.
 
 ## GUI Window
 ![Screenshot](gui_image.png)
