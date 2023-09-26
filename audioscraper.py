@@ -73,7 +73,7 @@ def main():
             url = values["-URL-"]
             save_dest = values["-DEST-"]
             downloadAudio(window, url, save_dest)
-        if event == "Search YouTube":
+        if event == "Search":
             launchYoutube()
 
     window.close()
