@@ -46,7 +46,7 @@ def cleanFilename(filename):
 def downloadAudio(window, url, download_directory):
     try:
         video = YouTube(url)
-        stream = video.streams.filter(only_audio=True).first()
+        stream = video.streams.filter(only_audio=True).last()
 
         if stream is None:
             raise Exception("No suitable audio stream found.")
